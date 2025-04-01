@@ -4,6 +4,9 @@ n3 = float(input("Digite a terceira nota: "))
 print(" ")
 media = ((n1+n2+n3)/3)
 if media >= 7:
-    print(f"Aprovadissimo pirraia, tua média foi{media}")
+    print(f"Aprovadissimo pirraia, tua média foi {media}")
 else:
-    print(f"Deu ruim pae, tua média foi {media}")
+    if media < 4:
+        print(f"Deu ruim pae, media {media}")
+    else:
+        print(f"ainda tem vida aí, recuperação média {media}")
