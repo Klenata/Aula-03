@@ -1,10 +1,14 @@
-print("Olá, tudo bem?")
 nome = input("Digite seu nome: ")
 print(" ")
-print(f"Olá {nome}. Agora por favor")
 idade = int(input("Digite sua idade: "))
 print(" ")
-print("Que legal, agora")
 salario = float(input("Digite seu salário: "))
 print(" ")
-print(f"Olá {nome}, você tem {idade} anos de idade e recebe {salario}, dá pra melhorar.")
+aumento = float(input("Digite o seu percentual de aumento: "))
+print(" ")
+resultado = (salario + salario * aumento / 100)
+print(" ")
+diferença = (resultado - salario)
+print(f"Olá {nome}, você tem {idade} anos de idade e recebe R${salario:.2f}\n"
+      f"e com um aumento de {aumento}%, seu novo salário é R${resultado:.2f}\n"
+      f"e teve um aumento de R${diferença:.2f}.")
