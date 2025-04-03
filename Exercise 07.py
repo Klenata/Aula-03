@@ -3,7 +3,7 @@ combust = input("G - Gasolina\nE - Etanol\nEscolha uma das opções: ")
 litros = float(input("Digite quantos litros você abasteceu: "))
 etanol = 4.90
 gasolina = 5.80
-
+print(" ")
 if combust == "G":
     print(f"O valor a ser pago será R${litros * gasolina:.2f} de gasolina")
 elif combust == "g":
